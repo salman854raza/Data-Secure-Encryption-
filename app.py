@@ -152,7 +152,7 @@ elif choice == "Login":
             st.session_state.failed_attempts = 0
             st.success(f"✅ Welcome {username}!")
             time.sleep(1)
-            st.experimental_rerun()  # Refresh to update navigation
+            st.rerun()  # Refresh to update navigation
         else:
             st.session_state.failed_attempts += 1
             remaining_attempts = MAX_ATTEMPTS - st.session_state.failed_attempts
