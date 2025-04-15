@@ -31,7 +31,7 @@ def load_data():
     return {}
 
 def save_data(data):
-    with open(DATA_FILE, "W") as f:
+    with open(DATA_FILE, "w") as f:
         json.dump(data, f)
 
 def generate_key(passkey):
